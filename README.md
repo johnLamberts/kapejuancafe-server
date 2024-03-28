@@ -38,3 +38,15 @@ npm install -D typescript
 ```
 
 If you're using **Visual Studio Code** then you are good to go! **_Visual Studio Code_** will detect and use the _TypeScript_ version you have installed in your `node_modules` folder.
+
+# Getting Started with ESLint
+
+ESLint is a code linter which mainly helps catch quickly minor code quality and style issues
+
+### ESlint
+
+Like most linters, ESLint has a wide set of configurable rules as well as support for custom rule sets.
+
+All rules are configured throught `.eslintrc` configuration file.
+
+In this project, we are using a fairly basic set of rules with no additional custom rules
