@@ -27,7 +27,12 @@ src
 └───routes
 └───services
 └───utils
-
-
-
 ```
+
+# Getting Started with TypeScript
+
+Typescript itself is simple to add to any project with `npm`
+
+` npm install -D typescript`
+
+If you're using **Visual Studio Code** then you are good to go! **_Visual Studio Code_** will detect and use the _TypeScript_ version you have installed in your `node_modules` folder.
