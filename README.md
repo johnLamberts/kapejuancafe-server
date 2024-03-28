@@ -13,6 +13,9 @@ To build and run this app locally you will need a few packages:
 # Folder Structure
 
 ```typescript
+test
+public
+testcases
 src
 └───app.ts
 └───server.ts
