@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
     "lint": "eslint --fix",
-    "check-lint": "eslint . --ext ts --ext tsx"
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
