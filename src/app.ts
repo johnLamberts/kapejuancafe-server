@@ -1,1 +1,3 @@
-console.log("Hello World");
+import { helloWorld } from "~/models/index";
+
+helloWorld();
