@@ -3,7 +3,7 @@ export const promiseWrapper =
   (
     req: any,
     res: any,
-    next: () => ((reason: any) => PromiseLike<never>) | null | undefined
+    next: () => ((reason: any) => PromiseLike<never>) | null | undefined,
   ) => {
     return Promise.resolve(func(req, res, next)).catch(next());
   };
