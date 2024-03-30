@@ -1,3 +1,3 @@
 export function helloWorld() {
-  console.log("from model folder");
+  console.log('from model folder');
 }

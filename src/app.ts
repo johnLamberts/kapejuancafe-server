@@ -1,3 +1,3 @@
-import { helloWorld } from "~/models/index";
+import { helloWorld } from '~/models/index';
 
 helloWorld();
