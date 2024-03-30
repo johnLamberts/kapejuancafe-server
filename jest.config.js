@@ -1,25 +1,15 @@
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-  bail: false,
-  verbose: false,
-  // The bail config option can be used here to have Jest stop running tests after
-  // the first failure.
-  bail: false,
-
-  // Indicates whether each individual test should be reported during the run.
-  verbose: false,
-
-  // Indicates whether the coverage information should be collected while executing the test
-  collectCoverage: false,
-  preset: "ts-jest",
-  testEnvironment: "node",
-  coverageDirectory: "coverage",
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  coverageDirectory: 'coverage',
   verbose: true,
   forceExit: true,
-  // clearMocks: true,
-  // resetMocks: true,
-  // restoreMocks: true,
-  modulePathIgnorePatterns: ["<rootDir>/dist/"],
+  clearMocks: true,
+  resetMocks: true,
+  restoreMocks: true,
+  modulePathIgnorePatterns: ['<rootDir>/dist/'],
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.ts?$',
   coverageThreshold: {
     global: {
       branches: 0,
@@ -28,8 +18,8 @@ module.exports = {
       statements: 0,
     },
   },
-  collectCoverageFrom: ["src/**/*.{js,ts}"],
+  collectCoverageFrom: ['src/**/*.{js,ts}'],
   moduleNameMapper: {
-    "@src/(.*)": "<rootDir>/src/$1",
+    '~/(.*)': '<rootDir>/src/$1',
   },
 };
