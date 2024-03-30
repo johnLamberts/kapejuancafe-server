@@ -89,16 +89,16 @@ Jest's configuration lives in `jest.config.js`, so let's open it up and add the 
 ```js
 module.exports = {
   globals: {
-    "ts-jest": {
-      tsconfigFile: "tsconfig.json",
+    'ts-jest': {
+      tsconfigFile: 'tsconfig.json',
     },
   },
-  moduleFileExtensions: ["ts", "js"],
+  moduleFileExtensions: ['ts', 'js'],
   transform: {
-    "^.+\\.(ts|tsx)$": "./node_modules/ts-jest/preprocessor.js",
+    '^.+\\.(ts|tsx)$': './node_modules/ts-jest/preprocessor.js',
   },
-  testMatch: ["**/test/**/*.test.(ts|js)"],
-  testEnvironment: "node",
+  testMatch: ['**/test/**/*.test.(ts|js)'],
+  testEnvironment: 'node',
 };
 ```
 
